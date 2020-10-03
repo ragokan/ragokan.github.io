@@ -9,9 +9,16 @@ cardinterests.style.display = "none"
 profilebutton.addEventListener("click", () => {
   cardprofile.style.display = "block"
   cardinterests.style.display = "none"
+  profilebutton.classList.add("active")
+  interestsbutton.classList.remove("active")
+    
 })
 
 interestsbutton.addEventListener("click", () => {
   cardprofile.style.display = "none"
   cardinterests.style.display = "flex"
+  
+  interestsbutton.classList.add("active")
+  profilebutton.classList.remove("active")
+  
 })
